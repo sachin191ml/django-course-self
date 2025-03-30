@@ -1,4 +1,6 @@
-  595  python.exe -m pip install --upgrade pip
-  583  py -m venv .venv
-  585  py -m pip install Django
-  602  py manage.py runserver
+python.exe -m pip install --upgrade pip
+py -m venv .venv
+py -m pip install Django
+django-admin startproject myproject
+cd myproject
+py manage.py runserver
