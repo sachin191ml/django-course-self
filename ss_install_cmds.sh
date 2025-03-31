@@ -60,3 +60,6 @@ Password (again):
 Superuser created successfully.
 (.venv)
 
+#  Lesson-07 commands
+py manage.py makemigrations
+py manage.py migrate
