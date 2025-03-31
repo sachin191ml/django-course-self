@@ -1,28 +1,29 @@
-# Tutorial: https://www.youtube.com/watch?v=Rp5vd34d-z4
-# Install python with Djano extension
+## Tutorial: https://www.youtube.com/watch?v=Rp5vd34d-z4
+### Install python with Djano extension
 python.exe -m pip install --upgrade pip
 py -m venv .venv
 source .venv/Scripts/activate
 py -m pip install Django
 
-# Start a new django project
+### Start a new django project
 django-admin startproject myproject
 cd myproject
 py manage.py runserver
 
-# Create a new app inside a project
+### Create a new app inside a project
 cd myproject
 py manage.py startapp posts
 
-# Misc commands
+### Misc commands
 deactivate
 dos2unix README.md
 
-# Lesson-03 commands
+## Lesson notes
+### Lesson-03 commands
 py manage.py migrate
 py manage.py makemigrations
 
-# Lesson-04 commands
+### Lesson-04 commands
 py manage.py shell
 Python 3.11.7 (tags/v3.11.7:fa7a6f2, Dec  4 2023, 19:24:49) [MSC v.1937 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
@@ -50,7 +51,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 <QuerySet [<Post: my First Post!>, <Post: My 2nd Post>]>
 >>> exit()
 
-#  Lesson-05 commands
+###  Lesson-05 commands
 py manage.py runserver 8001
 py manage.py createsuperuser
 Username (leave blank to use 'sachi_000'): sac
@@ -60,12 +61,12 @@ Password (again):
 Superuser created successfully.
 (.venv)
 
-#  Lesson-07 commands
+###  Lesson-07 commands
 py manage.py makemigrations
 py manage.py migrate
 
-# Lesson-08 Steps to add a new app (Add User App) - creating a new web page template
-# Will creiate a new web page
+### Lesson-08 Steps to add a new app (Add User App) - creating a new web page template
+### Will create a new web page
 1. Create a new App using following command:
    py manage.py startapp users
    ('users' directory will be created)
