@@ -50,7 +50,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 <QuerySet [<Post: my First Post!>, <Post: My 2nd Post>]>
 >>> exit()
 
-
 #  Lesson-05 commands
 py manage.py runserver 8001
 py manage.py createsuperuser
