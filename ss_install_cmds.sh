@@ -18,3 +18,5 @@ py manage.py startapp posts
 dos2unix README.md
 
 deactivate
+py manage.py migrate
+py manage.py makemigrations
