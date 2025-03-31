@@ -50,3 +50,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 <QuerySet [<Post: my First Post!>, <Post: My 2nd Post>]>
 >>> exit()
 
+
+#  Lesson-05 commands
+py manage.py runserver 8001
+py manage.py createsuperuser
+Username (leave blank to use 'sachi_000'): sac
+Email address:
+Password: sacdjango
+Password (again):
+Superuser created successfully.
+(.venv)
+
