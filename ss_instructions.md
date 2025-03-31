@@ -63,3 +63,21 @@ Superuser created successfully.
 #  Lesson-07 commands
 py manage.py makemigrations
 py manage.py migrate
+
+# Lesson-08 Steps to add a new app (Add User App) - creating a new web page template
+# Will creiate a new web page
+1. Create a new App using following command:
+   py manage.py startapp users
+   ('users' directory will be created)
+2. Tell master app about the new app
+   myproject/settings.py: Add 'users' in  INSTALLED_APPS (put comma at the end as well)
+3. Do following changes in the new app directory
+   users/urls.py: Create urls.py file  and add app name and list of urlpatterns to add - path, view and name
+4. In the main app add the new  app urls to the urlpatterns
+   myproject/urls.py: add path to include the new urls paths (make sure paths are comma seaparated)
+5. Create views for the new app (specify which html file to show and data to show on the page, passed as paramaters optionally)
+   users/views.py
+6. Create templates for new app
+   users/templates/users/register.html (with a varible if data is being passed)
+7. Adjust css style file if needed
+   static/css/style.css
