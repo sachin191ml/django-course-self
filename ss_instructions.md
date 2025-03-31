@@ -66,7 +66,6 @@ py manage.py makemigrations
 py manage.py migrate
 
 ### Lesson-08 Steps to add a new app (Add User App) - creating a new web page template
-### Will create a new web page
 1. Create a new App using following command:
    py manage.py startapp users
    ('users' directory will be created)
@@ -82,3 +81,19 @@ py manage.py migrate
    users/templates/users/register.html (with a varible if data is being passed)
 7. Adjust css style file if needed
    static/css/style.css
+
+### Lesson-09 Steps to add User Registration
+1. Create a form
+   users/view.py: Create a form and pass it on html file
+2. Update html to use the created form in the view
+   users/template/users/register.html:
+   a. Add when and what action to do when form is to invoked
+   b. Add css style class validation
+   c. Add csrf token to make sure form is authenticated (otherwise django will through an error)
+   d. Add code to show form and button
+3. Update css file for class-validaton and other stuff
+
+
+Interesting link to study:
+* [custom forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
+* (django-form)[https://www.geeksforgeeks.org/django-forms/]
