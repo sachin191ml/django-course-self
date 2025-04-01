@@ -17,9 +17,6 @@
         <a href="/">
             <span role="img" aria-label="Home" title="Home">🏠</span>
         </a> | 
-        <a href="/about">
-            <span role="img" aria-label="About" title="About">😀</span>
-        </a> | 
         <a href="{% url 'posts:list' %}">
             <span role="img" aria-label="Posts" title="Posts">📰</span>
         </a> | 
@@ -32,13 +29,16 @@
                 <button class="logout-button" aria-label="User Logout" title="User Logout">🔒</button>
             </form>
         {% else %}
+            <a href="{% url 'users:login' %}">
+                <span role="img" aria-label="User Login" title="User Login">🚪</span>
+            </a> | 
             <a href="{% url 'users:register' %}">
                 <span role="img" aria-label="User Login" title="User Registrtion">🚀</span>
             </a> | 
-            <a href="{% url 'users:login' %}">
-                <span role="img" aria-label="User Login" title="User Login">🚪</span>
-            </a>
         {% endif %}
+        <a href="/about">
+            <span role="img" aria-label="About" title="About">😀</span>
+        </a>
     </nav>
     <main>
         {% block content %}
