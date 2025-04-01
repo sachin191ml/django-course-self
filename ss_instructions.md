@@ -139,7 +139,10 @@ py manage.py migrate
    b. posts/views.py: Create a view proedure and logic for the created page
    c. posts/template/posts/post_new.html:  Create html template for the page
    d. templates/layout.html: Add nav 'New Post' button
-
+3. Protect "New Post' page for autheticated users
+   a. posts/views.py: Added login_required decorator
+   b. users/views.py & users/views.py: Get value to go the right page based on user authentication
+   c. TBD next - Add conditional checks to nav bar to show right buttons
 
 ## Additional Resources
 - [Custom Forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
