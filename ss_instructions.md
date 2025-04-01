@@ -151,8 +151,11 @@ py manage.py migrate
    c. posts/tempate/post_new.html: Show the form assigning db fileds to values
    d. If needed, update css file for styling of the form
 2. Validate the data entered
-   a. posts/views.py: aAdd validation code
-3. TBD - Update db based on data entered
+   a. posts/views.py: Add validation code
+3. Add user information as a link in the post db (two tables - relational db)
+   (run two migrations commands as db file has been added. Also you need to empty the database or add missing data)
+4. Save user infor to the db
+   a. posts/view.py: Save form data
 
 ## Additional Resources
 - [Custom Forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
