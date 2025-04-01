@@ -120,43 +120,54 @@ py manage.py migrate
 5. Add a navigation button to access the user registration page:
    - Update `myproject/templates/layout.html` to include a button with a hover title.
 
-### Lesson 10: User Login Page and Authentication
-1. Update user app to add Login page as follows:
-   a. templates/layout.html: Add nav 'Login' button
-   b. users/urls.py: Update urlpatterns of the user app to have 'Login' page and a view
-   c. users/views.py: Add view code to render 'Login' page
-   d. users/template/users/login.html:  Create a html 'Login' page
-   e. users/views.py: Update view logic
-   f. static/css/style.css: make tweaks if needed
-2.Add logic to login user after authenticated
-   - Modify 'users/views.py' view code to get user name and do login
+### Lesson 10: Adding a Login Page  
+1. **Create a Login Page**  
+   - **templates/layout.html**: Add a navigation button for "Login."  
+   - **users/urls.py**: Update urlpatterns to include the login page and corresponding view.  
+   - **users/views.py**: Implement a view function to render the login page.  
+   - **users/templates/users/login.html**: Create an HTML template for the login page.  
+   - **users/views.py**: Update view logic for handling user login.  
+   - **static/css/style.css**: Make styling adjustments if needed.  
 
-### Lesson 11: Authetication - allow users to access only valid pages
-1. Need to create a Logout button
-2. Add page in Post App for user to add a new post
-   (this page we would like to protect only for logged-in users)
-   a. posts/urls.py: Add a page to add new post by a user
-   b. posts/views.py: Create a view proedure and logic for the created page
-   c. posts/template/posts/post_new.html:  Create html template for the page
-   d. templates/layout.html: Add nav 'New Post' button
-3. Protect "New Post' page for autheticated users
-   a. posts/views.py: Added login_required decorator
-   b. users/views.py & users/views.py: Get value to go the right page based on user authentication
-   c. templates/layout.html - Add conditional checks to nav bar to show right buttons
+2. **Implement User Authentication on Login**  
+   - Modify **users/views.py** to retrieve the username and authenticate the user.  
 
-### Lesson 12: Adding custom form
-1. Create a data entry form
-   a. posts/forms.py: Create a new forms file, defien a function to select fields  you want from the models db
-   b. posts/view.py: Pass on created form with model db fields to html file
-   c. posts/tempate/post_new.html: Show the form assigning db fileds to values
-   d. If needed, update css file for styling of the form
-2. Validate the data entered
-   a. posts/views.py: Add validation code
-3. Add user information as a link in the post db (two tables - relational db)
-   (run two migrations commands as db file has been added. Also you need to empty the database or add missing data)
-4. Save user infor to the db
-   a. posts/view.py: Save form data
+---
 
+### Lesson 11: Authentication – Restricting Access to Valid Pages  
+1. Create a Logout Button  
+2. **Add a Page in the Posts App for Creating New Posts**  
+   - This page should be restricted to logged-in users only.  
+   - **posts/urls.py**: Add a route for the new post creation page.  
+   - **posts/views.py**: Implement the logic to handle the new post creation.  
+   - **posts/templates/posts/post_new.html**: Create an HTML template for this page.  
+   - **templates/layout.html**: Add a navigation button labeled "New Post."  
+
+3. **Restrict Access to the "New Post" Page**  
+   - **posts/views.py**: Apply the `login_required` decorator to restrict access.  
+   - **users/views.py**: Update the logic to ensure redirection based on user authentication.  
+   - **templates/layout.html**: Modify the navigation bar to conditionally display buttons based on authentication status.  
+
+---
+
+### Lesson 12: Adding a Custom Form  
+1. **Create a Data Entry Form**  
+   - **posts/forms.py**: Define a form and specify which fields should be selected from the database model.  
+   - **posts/views.py**: Pass the form with model fields to the HTML template.  
+   - **posts/templates/posts/post_new.html**: Display the form and bind database fields to values.  
+   - Update **static/css/style.css** if necessary for styling adjustments.  
+
+2. **Validate the Form Data**  
+   - **posts/views.py**: Implement validation logic to ensure correct data entry.  
+
+3. **Link User Information to Posts (Relational Database)**  
+   - Since this involves modifying the database schema, run migration commands.  
+   - If needed, clear the database or add missing data.  
+
+4. **Save User Information to the Database**  
+   - **posts/views.py**: Implement logic to save form data, ensuring user information is stored correctly.  
+
+---
 ## Additional Resources
 - [Custom Forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
 - [Django Forms Guide (GeeksforGeeks)](https://www.geeksforgeeks.org/django-forms/)
