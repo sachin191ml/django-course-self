@@ -53,6 +53,7 @@ a:hover {
 }
 
 .form-with-validation {
+    max-width: 600px;
     font-size: 1rem;
     padding: 1rem;
     display: flex;
@@ -94,6 +95,7 @@ a:hover {
 .errorlist li::marker {
     content: '🚨 ';
 }
+
 
 .logout {
     display: inline-block;

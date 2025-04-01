@@ -144,6 +144,12 @@ py manage.py migrate
    b. users/views.py & users/views.py: Get value to go the right page based on user authentication
    c. templates/layout.html - Add conditional checks to nav bar to show right buttons
 
+### Lesson 12: Adding custom form
+   a. posts/forms.py: Create a new forms file, defien a function to select fields  you want from the models db
+   b. posts/view.py: Pass on created form with model db fields to html file
+   c. posts/tempate/post_new.html: Show the form assigning db fileds to values
+   d. If needed, update css file for styling of the form 
+
 ## Additional Resources
 - [Custom Forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
 - [Django Forms Guide (GeeksforGeeks)](https://www.geeksforgeeks.org/django-forms/)
