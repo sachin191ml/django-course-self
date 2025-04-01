@@ -128,6 +128,8 @@ py manage.py migrate
    d. users/template/users/login.html:  Create a html 'Login' page
    e. users/views.py: Update view logic
    f. static/css/style.css: make tweaks if needed
+2.Add logic to login user after authenticated
+   - Modify 'users/views.py' view code to get user name and do login
 
 
 ## Additional Resources
