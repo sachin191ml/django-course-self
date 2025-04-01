@@ -131,6 +131,8 @@ py manage.py migrate
 2.Add logic to login user after authenticated
    - Modify 'users/views.py' view code to get user name and do login
 
+### Lesson 11: Authetication - allow users to access only valid pages
+1. Need to create a Logout button
 
 ## Additional Resources
 - [Custom Forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
