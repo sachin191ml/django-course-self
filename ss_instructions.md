@@ -92,6 +92,8 @@ py manage.py migrate
    c. Add csrf token to make sure form is authenticated (otherwise django will through an error)
    d. Add code to show form and button
 3. Update css file for class-validaton and other stuff
+4. Save/add user information when submitted
+   Validate information (when submitted) and redirect to the correct page
 
 
 Interesting link to study:
