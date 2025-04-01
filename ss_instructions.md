@@ -108,7 +108,7 @@ py manage.py migrate
 6. Adjust CSS styles (if needed):
    - Modify `static/css/style.css`.
 
-### Lesson 09: Implementing User Registration
+### Lesson 09: Implementing User Registrationa Page
 1. Create a form in `users/views.py` and pass it to the HTML template.
 2. Update the template (`users/templates/users/register.html`):
    - Define form submission behavior and validation.
@@ -119,6 +119,16 @@ py manage.py migrate
    - Modify `users/views.py` to validate input and redirect appropriately.
 5. Add a navigation button to access the user registration page:
    - Update `myproject/templates/layout.html` to include a button with a hover title.
+
+### Lesson 10: User Login Page and Authentication
+1. Update user app to add Login page as follows:
+   a. templates/layout.html: Add nav 'Login' button
+   b. users/urls.py: Update urlpatterns of the user app to have 'Login' page and a view
+   c. users/views.py: Add view code to render 'Login' page
+   d. users/template/users/login.html:  Create a html 'Login' page
+   e. users/views.py: Update view logic
+   f. static/css/style.css: make tweaks if needed
+
 
 ## Additional Resources
 - [Custom Forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
