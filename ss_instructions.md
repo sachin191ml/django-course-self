@@ -142,7 +142,7 @@ py manage.py migrate
 3. Protect "New Post' page for autheticated users
    a. posts/views.py: Added login_required decorator
    b. users/views.py & users/views.py: Get value to go the right page based on user authentication
-   c. TBD next - Add conditional checks to nav bar to show right buttons
+   c. templates/layout.html - Add conditional checks to nav bar to show right buttons
 
 ## Additional Resources
 - [Custom Forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
