@@ -133,6 +133,13 @@ py manage.py migrate
 
 ### Lesson 11: Authetication - allow users to access only valid pages
 1. Need to create a Logout button
+2. Add page in Post App for user to add a new post
+   (this page we would like to protect only for logged-in users)
+   a. posts/urls.py: Add a page to add new post by a user
+   b. posts/views.py: Create a view proedure and logic for the created page
+   c. posts/template/posts/post_new.html:  Create html template for the page
+   d. templates/layout.html: Add nav 'New Post' button
+
 
 ## Additional Resources
 - [Custom Forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
