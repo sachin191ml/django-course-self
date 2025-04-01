@@ -25,7 +25,8 @@ py manage.py makemigrations
 
 ### Lesson-04 commands
 py manage.py shell
-Python 3.11.7 (tags/v3.11.7:fa7a6f2, Dec  4 2023, 19:24:49) [MSC v.1937 64 bit (AMD64)] on win32
+```console
+Python 3.11.7 (tags/v3.11.7:fa7a6f2, DIec  4 2023, 19:24:49) [MSC v.1937 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 (InteractiveConsole)
 >>> from posts.models import Post
@@ -38,8 +39,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 <QuerySet [<Post: Post object (1)>]>
 >>> exit()
 (.venv)
-sachi_000@SAC_IVB_DT MINGW64 /h/Sachin_2/Engineering/Projects/MyWebsite/Django/django-course-self/myproject (master *)
+```
+
 $ py manage.py shell
+```console
 Python 3.11.7 (tags/v3.11.7:fa7a6f2, Dec  4 2023, 19:24:49) [MSC v.1937 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 (InteractiveConsole)
@@ -50,6 +53,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> Post.objects.all()
 <QuerySet [<Post: my First Post!>, <Post: My 2nd Post>]>
 >>> exit()
+```
 
 ###  Lesson-05 commands
 py manage.py runserver 8001
@@ -92,10 +96,13 @@ py manage.py migrate
    c. Add csrf token to make sure form is authenticated (otherwise django will through an error)
    d. Add code to show form and button
 3. Update css file for class-validaton and other stuff
+   myproject/static/css.style.css
 4. Save/add user information when submitted
-   Validate information (when submitted) and redirect to the correct page
+   users/views.py: Validate information (when submitted) and redirect to the correct pageo
+5. Add navigation bar button to go to user registration page
+   myproject/templates/layout.html: add new button and title to show when you hover over with mouse
 
 
-Interesting link to study:
+**Interesting link to study:**
 * [custom forms in Django](https://docs.djangoproject.com/en/5.1/topics/forms/)
-* (django-form)[https://www.geeksforgeeks.org/django-forms/]
+* [django-form](https://www.geeksforgeeks.org/django-forms/)
